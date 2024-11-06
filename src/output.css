@@ -637,6 +637,10 @@ video {
   display: none;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -987,5 +991,15 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
