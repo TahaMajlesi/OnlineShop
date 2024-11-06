@@ -9,13 +9,13 @@ $(document).ready(function() {
             }
 
             html += `
-            <div class="md:w-2/12 w-6/12  flex flex-col items-center cursor-pointer bg-white rounded-md py-2">
+            <div class="md:w-2/12 w-6/12  flex flex-col items-center cursor-pointer bg-white rounded-md py-2 ">
             <img src="${element["image"]}" class="rounded-t-md">
             <div class="w-full flex flex-col mt-2 items-center">
             <p>${element["model"]}</p>
-            <div class="flex flex-row w-full justify-around my-2">
+            <div class="flex md:flex-row flex-col w-full items-center justify-around my-2 ">
             <p>Price : ${element["price"]}$</p>
-            <span class="bg-red-400 rounded-md px-2">Discount : ${Math.floor((Math.random() * 30) + 1)}%</span></div>
+            <span class="md:bg-red-400 md:rounded-md md:px-2">Discount : ${Math.floor((Math.random() * 30) + 1)}%</span></div>
             </div>
             </div>`
             $(`#Discount-Time>div:nth-of-type(${i})`).html(html)
