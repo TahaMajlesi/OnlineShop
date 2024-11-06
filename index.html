@@ -33,15 +33,19 @@
     </nav>
 
     <!-- Navbar Desktop End -->
+    <nav class="w-full justify-center flex my-2 md:hidden">
+        <input type="text" name="MobileSearchBar" id="MobileSearchBar"
+            class="h-10 w-10/12 border-2 border-black rounded-lg focus:outline-none font-semibold text-lg px-2"
+            placeholder="Search ...">
+    </nav>
 
 
-
-    <div id="root" class="w-full flex justify-around mt-10">
+    <div id="root" class="w-full flex justify-around md:mt-10 mt-4">
 
 
 
         <!-- desktop Menu Bar Start -->
-        <div class="flex py-2 border-2 border-black rounded-md sticky z-40 h-[22rem] top-1/4" id="sidebar">
+        <div class="hidden py-2 border-2 border-black rounded-md sticky z-40 h-[22rem] top-1/4 md:flex" id="sidebar">
             <div class="flex flex-col">
                 <p class="mx-auto text-2xl">MenuBar</p>
                 <ul class="flex flex-col items-center">
@@ -90,10 +94,10 @@
         <!-- Login desktop End -->
 
 
-        <div id="content" class="w-9/12 rounded-md flex flex-col z-0">
-            <div class="swiper BannerSwiper w-full rounded-t-md">
+        <div id="content" class="md:w-9/12 w-full rounded-md flex flex-col z-0">
+            <div class="swiper BannerSwiper w-full rounded-t-md ">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide_2 cursor-pointer"><img
+                    <div class="swiper-slide slide_2 cursor-pointer "><img
                             src="images/bannes/vecteezy_payment-online-on-mobile-phone-online-shopping-sell-buy-bill_.jpg"
                             alt=""></div>
                     <div class="swiper-slide slide_1 cursor-pointer "><img
@@ -104,30 +108,30 @@
             </div>
 
             <p class="mx-auto font-semibold text-3xl border-b-2 py-2 my-2 border-rose-500">Papular Categories</p>
-            <div class="w-full flex justify-around py-3" id="circle-banner">
-                <div class="w-2/12 flex flex-col items-center cursor-pointer rounded-full"></div>
-                <div class="w-2/12 flex flex-col items-center cursor-pointer rounded-full"></div>
-                <div class="w-2/12 flex flex-col items-center cursor-pointer rounded-full"></div>
-                <div class="w-2/12 flex flex-col items-center cursor-pointer rounded-full"></div>
+            <div class="w-full flex justify-around py-3 flex-wrap md:flex-nowrap" id="circle-banner">
+                <div class="md:w-2/12 w-6/12 flex flex-col items-center cursor-pointer rounded-full"></div>
+                <div class="md:w-2/12 w-6/12 flex flex-col items-center cursor-pointer rounded-full"></div>
+                <div class="md:w-2/12 w-6/12 flex flex-col items-center cursor-pointer rounded-full"></div>
+                <div class="md:w-2/12 w-6/12 flex flex-col items-center cursor-pointer rounded-full"></div>
             </div>
             <p class="mx-auto font-semibold text-3xl border-b-2 py-2 my-2 border-rose-500">discount Time</p>
             <div class="swiper Discount-Time w-full">
                 <div class="swiper-wrapper" id="Discount-Time">
-                    <div class="swiper-slide !flex flex-row justify-around py-3"></div>
-                    <div class="swiper-slide !flex flex-row justify-around py-3"></div>
-                    <div class="swiper-slide !flex flex-row justify-around py-3"></div>
-                    <div class="swiper-slide !flex flex-row justify-around py-3"></div>
-                    <div class="swiper-slide !flex flex-row justify-around py-3"></div>
+                    <div class="swiper-slide !flex flex-row justify-around py-3 flex-wrap"></div>
+                    <div class="swiper-slide !flex flex-row justify-around py-3 flex-wrap"></div>
+                    <div class="swiper-slide !flex flex-row justify-around py-3 flex-wrap"></div>
+                    <div class="swiper-slide !flex flex-row justify-around py-3 flex-wrap"></div>
+                    <div class="swiper-slide !flex flex-row justify-around py-3 flex-wrap"></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
             <p class="mx-auto font-semibold text-3xl border-b-2 pt-2 my-7 border-rose-500">Papular Tv Brands</p>
-            <div class="w-full flex justify-evenly">
+            <div class="w-full flex justify-evenly flex-wrap md:flex-nowrap gap-y-4 md:gap-0">
                 <img src="images/tvBanners/XiaomiTv.jpg" alt="Samsung Tv Banner"
-                    class="w-5/12 rounded-2xl cursor-pointer">
+                    class="md:w-5/12 w-11/12 rounded-2xl cursor-pointer">
                 <img src="images/tvBanners/samsungTvBanners.jpg" alt="Xiaomi Tv Banner"
-                    class="w-5/12 rounded-2xl cursor-pointer">
+                    class="md:w-5/12 w-11/12 rounded-2xl cursor-pointer">
             </div>
 
             <p class="mx-auto font-semibold text-3xl border-b-2 py-2 my-2 border-rose-500">Tv Party</p>
@@ -144,44 +148,44 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <div class="w-full flex border-2 bg-blue-500 border-black rounded-3xl my-3 py-2">
-                <div class="w-6/12 flex flex-col items-center gap-y-5 py-4">
+            <div class="md:w-full w-11/12 mx-auto md:mx-0 flex border-2 bg-blue-500 border-black rounded-3xl my-3 py-2">
+                <div class="md:w-6/12 w-full flex flex-col items-center gap-y-5 py-4">
                     <p class="text-2xl text-white">Contact Us</p>
                     <input type="text" name="ContactName" id="ContactName"
-                        class="h-12 rounded-3xl w-6/12 p-2 border-black border-2 focus:outline-none font-semibold text-lg"
+                        class="h-12 rounded-3xl md:w-6/12 w-10/12 p-2 border-black border-2 focus:outline-none font-semibold text-lg"
                         placeholder="Name">
                     <input type="text" name="ContactMail" id="ContactMail"
-                        class="h-12 rounded-3xl w-6/12 p-2 border-black border-2 focus:outline-none font-semibold text-lg"
+                        class="h-12 rounded-3xl md:w-6/12 w-10/12 p-2 border-black border-2 focus:outline-none font-semibold text-lg"
                         placeholder="Email">
                     <textarea id="ContactReason"
-                        class="h-40 rounded-3xl w-6/12 p-2 text-pretty break-all resize-none border-black border-2 focus:outline-none font-semibold text-lg"
+                        class="h-40 rounded-3xl md:w-6/12 w-10/12 p-2 text-pretty break-all resize-none border-black border-2 focus:outline-none font-semibold text-lg"
                         placeholder="Message"></textarea>
                     <button type="submit"
-                        class="bg-orange-600 w-2/12 p-2 rounded-2xl text-white border-black border-2">Submit</button>
+                        class="bg-orange-600 md:w-2/12 w-8/12 p-2 rounded-2xl text-white border-black border-2">Submit</button>
                 </div>
-                <div class="w-6/12 flex">
+                <div class="w-6/12 md:flex hidden">
                     <img src="images/Illustrations/undraw_join_re_w1lh.svg" alt="" class="w-8/12">
                 </div>
             </div>
             <!-- Desktop Footer start -->
 
             <footer class="w-full flex p-5 border-black border-2 border-b-0 rounded-3xl rounded-b-none mt-4">
-                <div class="w-6/12 flex flex-col">
+                <div class="w-6/12 flex-col md:flex hidden">
                     <p class="font-black text-xl"><span class="font-black text-2xl">OnlineShop!</span>&nbsp;one of best
                         online markets</p>
 
-                    <p class="font-semibold text-xl text-pretty my-2">Launched in 2020, Online Shop is a dynamic online
-                        marketplace focused on eco-friendly and sustainable products. Committed to promoting
-                        environmentally conscious shopping, it offers a diverse range of items, from organic groceries
-                        to
+                    <p class="font-semibold text-xl text-pretty my-2 md:flex hidden">Launched in 2020, Online Shop is a
+                        dynamic online marketplace focused on eco-friendly and sustainable products. Committed to
+                        promoting environmentally conscious shopping, it offers a diverse range of items, from organic
+                        groceries to
                         biodegradable goods. With a user-friendly interface and a dedication to connecting consumers
                         with ethical brands, Online Shop has quickly gained traction among eco-conscious shoppers,
                         aiming to lead the way in sustainable e-commerce.</p>
                 </div>
-                <div class="w-6/12 flex px-2">
-                    <div class="w-6/12 flex flex-col items-center">
+                <div class="md:w-6/12 w-full flex px-2">
+                    <div class="md:w-6/12 w-full flex flex-col items-center">
                         <p class="font-black text-xl">Useful links that help</p>
-                        <ul class="font-semibold text-lg h-full flex flex-col justify-evenly ">
+                        <ul class="font-semibold text-lg h-full flex flex-col justify-evenly">
                             <li class="cursor-pointer">Home</li>
                             <li class="cursor-pointer">Categories</li>
                             <li class="cursor-pointer">Discount Party</li>
@@ -189,7 +193,7 @@
                             <li class="cursor-pointer">Contact Us</li>
                         </ul>
                     </div>
-                    <div class="w-6/12 flex flex-col items-center">
+                    <div class="w-6/12 flex-col items-center md:flex hidden">
                         <p class="font-black text-xl">Contact Us</p>
                         <ul class="font-semibold text-lg h-full flex flex-col justify-evenly ">
                             <li><i class="fa-solid fa-house"></i>&nbsp;New York, NY 10012, US</li>
@@ -212,12 +216,12 @@
     <!-- Mobile -->
 
     <!-- Login Screen mobile start -->
-    <nav class="flex sticky w-full bg-[#1E2A5E] md:hidden py-1 justify-evenly">
-        <button><i class="fa-solid fa-house text-xl my-2 text-[#E1D7B7]"></i></button>
-        <button><i class="fa-solid fa-bars text-xl my-2 text-[#E1D7B7]"></i></button>
-        <button><i class="fa-solid fa-magnifying-glass text-xl my-2 text-[#E1D7B7]"></i></button>
-        <button><i class="fa-solid fa-gear text-xl my-2 text-[#E1D7B7]"></i></button>
-        <button><i class="fa-regular fa-user text-xl my-2 text-[#E1D7B7]"></i></button>
+    <nav class="flex sticky w-full border-2 border-black md:hidden py-1 justify-evenly">
+        <button><i class="fa-solid fa-house text-xl my-2"></i></button>
+        <button><i class="fa-solid fa-bars text-xl my-2"></i></button>
+        <button><i class="fa-solid fa-magnifying-glass text-xl my-2"></i></button>
+        <button><i class="fa-solid fa-gear text-xl my-2"></i></button>
+        <button><i class="fa-regular fa-user text-xl my-2"></i></button>
     </nav>
     <!-- Login Screen mobile start -->
 
