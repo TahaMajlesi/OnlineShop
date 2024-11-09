@@ -25,14 +25,20 @@ $(document).ready(function() {
         </div>
         <p class="py-2 border-b-2 border-black text-pretty">${data["product"]["description"]}</p>
 
-        <ul class="bg-violet-400 flex flex-col text-lg font-medium border-b-2 border-black py-2">
+        <ul class="flex flex-col text-lg font-medium border-b-2 border-black py-2">
         <li>Price : ${data["product"]["price"]}$</li>
         <li>Brand : ${data["product"]["brand"]}</li>
         <li>Model : ${data["product"]["model"]}</li>
         <li>Color : ${data["product"]["color"]}</li>
         <li>Category : ${data["product"]["category"]}</li>
         </ul>
+        <div class="w-full flex my-2 border-2 border-black rounded-lg">
+        <button class="w-6/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold">Add To Cart</button>
+        <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist</button>
         </div>
+        </div>
+        
+        
         `
 
 
