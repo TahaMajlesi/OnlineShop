@@ -5,7 +5,7 @@ $(document).ready(function() {
         html += `
         <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="w-4/12">
         
-        <div class="w-8/12 bg-yellow-600 px-4 flex flex-col">
+        <div class="w-8/12 px-4 flex flex-col">
         <p class="text-xl font-semibold">${data["product"]["title"]}</p>
 
         <div class="w-full flex py-2 border-b-2 border-black">
@@ -33,8 +33,8 @@ $(document).ready(function() {
         <li>Category : ${data["product"]["category"]}</li>
         </ul>
         <div class="w-full flex my-2 border-2 border-black rounded-lg">
-        <button class="w-6/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold">Add To Cart</button>
-        <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist</button>
+        <button class="w-6/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
         </div>
         
