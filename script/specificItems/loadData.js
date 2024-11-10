@@ -1,13 +1,12 @@
 $(document).ready(function() {
 
     window.LoadItemData = function(ProductId) {
-
         let html = ``
         fetch(`https://fakestoreapi.in/api/products/${ProductId}`).then((res) => res.json()).then((data) => {
 
 
             html += `
-        <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="w-4/12">
+        <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="w-4/12 ">
         
         <div class="w-8/12 px-4 flex flex-col">
         <p class="text-xl font-semibold">${data["product"]["title"]}</p>
@@ -40,9 +39,18 @@ $(document).ready(function() {
         <button class="w-6/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
         <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
+        <div class="w-full flex flex-col bg-red-300">
+        <p class="text-lg font-bold">People Reviews :</p>
+        <ul class="flex flex-col bg-yellow-600" id="ProductsReview">
+            ${resultComments}
+        </ul>
+        
+        
+        
+        
+        </div>
         </div>
         `
-
 
             $("#specificItemHeader").html(html)
 
