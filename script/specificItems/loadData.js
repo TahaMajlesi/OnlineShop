@@ -6,8 +6,9 @@ $(document).ready(function() {
 
 
             html += `
-            <div class="flex flex-col md:flex-row">
+            <div class="flex w-full flex-col md:flex-row">
             <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full">
+            <br>
         
         <div class="md:w-8/12 w-full px-4 flex flex-col">
         <p class="text-xl font-semibold">${data["product"]["title"]}</p>
