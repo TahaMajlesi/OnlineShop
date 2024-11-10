@@ -7,7 +7,7 @@ $(document).ready(function() {
 
             html += `
             <div class="flex w-full mx-auto flex-col md:flex-row">
-            <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full">
+            <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full rounded-t-md md:rounded-none">
             <br>
         
         <div class="md:w-8/12 w-full px-4 flex flex-col">
@@ -37,9 +37,9 @@ $(document).ready(function() {
         <li>Color : ${data["product"]["color"]}</li>
         <li>Category : ${data["product"]["category"]}</li>
         </ul>
-        <div class="w-full flex my-2 border-2 border-black rounded-lg">
-        <button class="w-6/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
-        <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
+        <div class="w-full flex md:flex-row flex-col my-2 border-2 border-black rounded-lg">
+        <button class="w-6/12 md:w-11/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold md:mx-auto">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="w-6/12 md:w-11/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold md:mx-auto">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
         </div>
 
