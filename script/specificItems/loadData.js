@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
             html += `
-            <div class="flex w-11/12 mx-auto flex-col md:flex-row">
+            <div class="flex w-full mx-auto flex-col md:flex-row">
             <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full">
             <br>
         
