@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     let ProductId = 0
     let html = ``
     fetch(`https://fakestoreapi.in/api/products/${ProductId}`).then((res) => res.json()).then((data) => {
@@ -37,8 +38,6 @@ $(document).ready(function() {
         <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
         </div>
-        
-        
         `
 
 
