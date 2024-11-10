@@ -1,15 +1,20 @@
 $(document).ready(function() {
 
     $("#Discount-Time , #TvParty").on("click", '.ItemCard', function() {
-        console.log(true)
-        if ($("#content").hasClass("flex") && $("#specificItemHeader").hasClass("hidden")) {
-            console.log(true);
+        window.parent.LoadItemData($(this).attr("id"))
 
-            ProductId = $(this).attr("id")
+
+        if ($("#content").hasClass("flex")) {
             $("#content").removeClass("flex")
             $("#content").addClass("hidden")
-            $("#specificItemHeader").removeClass("hidden")
-            $("#specificItemHeader").addClass("flex")
+            $("#specificItem").removeClass("hidden")
+            $("#specificItem").addClass("flex")
+        } else {
+            $("#content").addClass("flex")
+            $("#content").removeClass("hidden")
+            $("#specificItem").addClass("hidden")
+            $("#specificItem").removeClass("flex")
+
         }
 
 

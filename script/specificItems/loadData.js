@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
-    let ProductId = 0
-    let html = ``
-    fetch(`https://fakestoreapi.in/api/products/${ProductId}`).then((res) => res.json()).then((data) => {
-        html += `
+    window.LoadItemData = function(ProductId) {
+
+        let html = ``
+        fetch(`https://fakestoreapi.in/api/products/${ProductId}`).then((res) => res.json()).then((data) => {
+
+
+            html += `
         <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="w-4/12">
         
         <div class="w-8/12 px-4 flex flex-col">
@@ -41,13 +44,16 @@ $(document).ready(function() {
         `
 
 
-        $("#specificItemHeader").html(html)
+            $("#specificItemHeader").html(html)
 
 
 
 
 
-    })
+        })
+
+    }
+
 
 
 
