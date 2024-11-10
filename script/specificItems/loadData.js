@@ -38,8 +38,8 @@ $(document).ready(function() {
         <li>Category : ${data["product"]["category"]}</li>
         </ul>
         <div class="w-full flex md:flex-row flex-col my-2 border-2 border-black rounded-lg">
-        <button class="w-6/12 md:w-11/12 hover:bg-green-500 py-4 border-e-2 rounded-s-lg border-black text-lg font-bold md:mx-auto">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
-        <button class="w-6/12 md:w-11/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold md:mx-auto">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
+        <button class="w-1/12 md:w-6/12 hover:bg-green-500 py-4 md:border-e-2 rounded-s-lg border-2 border-black text-lg font-bold md:mx-auto">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="w-1/12 md:w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold md:mx-auto border-black md:border-2">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
         </div>
 
