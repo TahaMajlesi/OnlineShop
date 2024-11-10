@@ -6,9 +6,10 @@ $(document).ready(function() {
 
 
             html += `
-        <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full">
+            <div class="flex flex-col md:flex-row">
+            <img src="${data["product"]["image"]}" alt="${data["product"]["title"]}" class="md:w-4/12 w-full">
         
-        <div class="w-8/12 px-4 flex flex-col">
+        <div class="md:w-8/12 w-full px-4 flex flex-col">
         <p class="text-xl font-semibold">${data["product"]["title"]}</p>
 
         <div class="w-full flex py-2 border-b-2 border-black">
@@ -40,6 +41,11 @@ $(document).ready(function() {
         <button class="w-6/12 py-4 rounded-e-lg hover:bg-blue-500 text-lg font-bold">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
         </div>
+
+
+
+            </div>
+        
         `
 
             $("#specificItemHeader").html(html)
