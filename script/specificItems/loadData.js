@@ -37,7 +37,7 @@ $(document).ready(function() {
         <li>Color : ${data["product"]["color"]}</li>
         <li>Category : ${data["product"]["category"]}</li>
         </ul>
-        <div class="w-full flex md:flex-row flex-col my-2 md:border-2 md:border-black md:rounded-lg border-0">
+        <div class="w-full flex md:flex-row flex-col !my-2 md:border-2 md:border-black md:rounded-lg border-0">
         <button class="!w-full md:w-6/12 hover:bg-green-500 py-4 md:border-e-2 md:rounded-s-lg md:rounded-none rounded-lg border-2 md:border-0 border-black text-lg font-bold mx-auto md:mx-0 mt-3 md:mt-0">Add To Cart <i class="fa-solid fa-bag-shopping"></i></button>
         <button class="!w-full md:w-6/12 py-4 md:rounded-e-lg rounded-lg hover:bg-blue-500 text-lg font-bold mx-auto border-black border-2 md:border-0 md:mx-0">Add To Wishlist <i class="fa-regular fa-bookmark"></i></button>
         </div>
