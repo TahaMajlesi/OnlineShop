@@ -613,6 +613,10 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .me-5 {
   margin-inline-end: 1.25rem;
 }
@@ -623,14 +627,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .\!flex {
@@ -745,6 +741,10 @@ video {
   row-gap: 1.25rem;
 }
 
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -846,6 +846,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .p-2 {
