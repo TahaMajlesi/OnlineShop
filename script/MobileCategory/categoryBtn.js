@@ -22,9 +22,10 @@ $(document).ready(function() {
             $("#content").addClass("flex")
         }
     })
-    $("#mobileHomeMenuItem").on("click", function() {
+    $("#mobileHomeMenuItem , #HomeMenuItem").on("click", function() {
         $("#mobileCategory").removeClass("flex")
         $("#mobileCategory").addClass("hidden")
     })
+
 
 })

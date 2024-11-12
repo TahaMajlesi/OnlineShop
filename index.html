@@ -77,7 +77,7 @@
         <!-- desktop Menu Bar End -->
 
         <!-- Login desktop Start -->
-        <div class="md:w-2/12 w-10/12 bg-white hidden flex-col mx-auto absolute z-50 items-center rounded-md py-4 border-2 border-black"
+        <div class="md:w-2/12 w-10/12 bg-white hidden flex-col mx-auto fixed top-1/4 z-50 items-center rounded-md py-4 border-2 border-black"
             id="loginScreen">
             <div class="w-11/12 flex flex-col">
                 <label for="UsernameInput" class="my-1 font-semibold">Enter Username</label>
@@ -234,7 +234,8 @@
     <!-- Mobile -->
 
     <!-- Login Screen mobile start -->
-    <nav class="flex sticky w-full border-2 border-black md:hidden py-1 justify-evenly">
+    <nav class="flex w-full border-2 border-b-0 border-black md:hidden py-1 justify-evenly sticky bottom-0 bg-white"
+        id="mobileNavBar">
         <button id="mobileHomeMenuItem"><i class="fa-solid fa-house text-xl my-2"></i></button>
         <button id="mobileCategoryMenuItem"><i class="fa-solid fa-bars text-xl my-2"></i></button>
         <button><i class="fa-solid fa-magnifying-glass text-xl my-2"></i></button>
