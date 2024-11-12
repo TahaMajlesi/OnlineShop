@@ -5,6 +5,10 @@ let BannerSwiper = new Swiper(".BannerSwiper", {
 
     },
     loop: true,
+    autoplay: {
+        delay: 60000,
+        disableOnInteraction: false,
+    },
 });
 
 let Discount = new Swiper(".Discount-Time", {
@@ -12,7 +16,14 @@ let Discount = new Swiper(".Discount-Time", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+    },
     loop: true,
+    autoplay: {
+        delay: 60000,
+        disableOnInteraction: false,
+    },
 });
 
 
@@ -21,5 +32,12 @@ let TvParty = new Swiper(".TvParty", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+    },
     loop: true,
+    autoplay: {
+        delay: 60000,
+        disableOnInteraction: false,
+    },
 });
