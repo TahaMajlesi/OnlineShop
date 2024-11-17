@@ -61,7 +61,7 @@
                     <li class="my-4 px-5 text-xl w-full flex justify-center cursor-pointer" id="BrandsMenuItem">Brands
                     </li>
                     <li class="my-4 px-5 text-xl w-full flex justify-center cursor-pointer" id="CategoryMenuItem">
-                        Category
+                        Categories
                     </li>
                     <li class="my-4 px-5 text-xl w-full flex justify-center cursor-pointer" id="Price-menu-item">Price
                     </li>
@@ -101,6 +101,41 @@
         </div>
         <!-- Login desktop End -->
 
+        <div id="SettingsWindow"
+            class="lg:w-3/12 md:w-4/12 w-10/12 bg-white flex flex-col mx-auto fixed top-1/4 z-50 items-center rounded-md py-4 border-2 border-black">
+            <p class="text-xl font-semibold">Settings</p>
+
+            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                <span class="text-lg font-medium">Dark Theme</span>
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                <span class="text-lg font-medium">Navigator</span>
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                <span class="text-lg font-medium">Notifications</span>
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                <span class="text-lg font-medium">Personalized Advertising</span>
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+            <button id="close-settings-btn"
+                class="w-11/12 bg-red-500 py-2 rounded-md mt-2 font-semibold border-2 border-black">Close</button>
+        </div>
 
         <div id="content" class="md:w-9/12 w-full rounded-md flex flex-col z-0">
             <div class="swiper BannerSwiper w-full rounded-t-md !hidden md:!flex">
