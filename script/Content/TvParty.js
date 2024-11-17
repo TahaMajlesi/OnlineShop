@@ -10,7 +10,7 @@ $(document).ready(function() {
 
             html += `
             <div class="md:w-2/12 w-6/12 flex flex-col items-center cursor-pointer bg-white rounded-md justify-center ItemCard" id="${element["id"]}">
-            <img src="${element["image"]}" class="rounded-t-md">
+            <img src="${element["image"]}" class="rounded-t-md aspect-auto object-cover">
             <div class="w-full flex flex-col items-center">
             <p>${element["model"]}</p>
             <div class="flex md:flex-row flex-col w-full justify-around my-2 items-center">

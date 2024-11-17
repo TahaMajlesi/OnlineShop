@@ -690,6 +690,14 @@ video {
   height: auto;
 }
 
+.h-2\/4 {
+  height: 50%;
+}
+
+.\!h-2\/4 {
+  height: 50% !important;
+}
+
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -772,6 +780,10 @@ video {
 
 .gap-y-5 {
   row-gap: 1.25rem;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-y-auto {
