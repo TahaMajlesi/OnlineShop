@@ -6,7 +6,7 @@ $(document).ready(function() {
             categories.push(element)
             html += `
             <div class="flex flex-col w-5/12 border-2 border-black rounded-md justify-between bg-white">
-            <img id="categoryItem-${element}" class="rounded-t-md">
+            <img id="categoryItem-${element}" class="rounded-t-md aspect-square object-contain">
             <p class="w-full flex justify-center text-lg font-semibold">${element}</p>
             </div>
             `
