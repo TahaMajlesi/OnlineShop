@@ -558,24 +558,16 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .sticky {
   position: sticky;
-}
-
-.top-1\/4 {
-  top: 25%;
 }
 
 .bottom-0 {
   bottom: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.top-1\/4 {
+  top: 25%;
 }
 
 .z-0 {
@@ -641,10 +633,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .\!flex {
   display: flex !important;
 }
@@ -679,6 +667,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/12 {
@@ -1027,14 +1019,6 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
-  }
-
-  .md\:border-2 {
-    border-width: 2px;
-  }
-
-  .md\:border-b-0 {
-    border-bottom-width: 0px;
   }
 
   .md\:text-lg {
