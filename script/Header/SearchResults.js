@@ -38,13 +38,21 @@ $(document).ready(function() {
                     }
                 });
 
+                $("#searchSuggestion").fadeIn(200)
+
+            } else {
+                $("#searchSuggestion").fadeOut(200)
             }
+
+
 
             $("#searchSuggestionBox").html(html)
 
 
         }
     });
+
+
 
 
 
