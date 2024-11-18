@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#Discount-Time , #TvParty").on("click", '.ItemCard', function() {
+    $("#Discount-Time , #TvParty , #searchSuggestionBox").on("click", '.ItemCard', function() {
         window.parent.LoadItemData($(this).attr("id"))
 
 
@@ -9,12 +9,6 @@ $(document).ready(function() {
             $("#content").addClass("hidden")
             $("#specificItem").removeClass("hidden")
             $("#specificItem").addClass("flex")
-        } else {
-            $("#content").addClass("flex")
-            $("#content").removeClass("hidden")
-            $("#specificItem").addClass("hidden")
-            $("#specificItem").removeClass("flex")
-
         }
 
 

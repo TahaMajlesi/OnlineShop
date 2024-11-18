@@ -9,7 +9,30 @@ $(document).ready(function() {
 
     })
 
+    function results(inputValue) {
+        productsList.forEach(element => {
+            let elemTitleToLower = element["title"].toLowerCase()
+            let elemModelToLower = element["model"].toLowerCase()
 
+            if (elemTitleToLower.includes(inputValue.toLowerCase()) || elemModelToLower.includes(inputValue.toLowerCase())) {
+                html += `<div class="w-full flex flex-col hover:border-black border-y-2 cursor-pointer ItemCard" id="${element["id"]}">
+                <p class="w-full flex px-3 my-1">${element["title"]}</p>
+                <p class="w-full flex justify-around my-1">
+                <span>Model : ${element["model"]}</span>
+                <span>Brand : ${element["brand"]}</span>
+                <span>Category : ${element["category"]}</span>
+                <span>Price : ${element["price"]}$</span>
+                
+                
+                </p>
+
+                </div>
+                
+                </div>`
+            }
+        });
+        $("#searchSuggestionBox").html(html)
+    }
 
     $('#SearchInput').keypress(function(e) {
         html = ``
@@ -18,39 +41,41 @@ $(document).ready(function() {
         {
             let inputVal = $("#SearchInput").val()
             if (!inputVal == "") {
+                results(inputVal)
 
-                productsList.forEach(element => {
-                    let elemToLower = element["title"].toLowerCase()
-                    if (elemToLower.includes(inputVal.toLowerCase())) {
-                        html += `<div class="w-full bg-red-400 flex items-start rounded-b-md" id="${element["id"]}">
-                        <img class="w-2/12 aspect-square" src="${element["image"]}">
-                        <div class="w-10/12 bg-violet-500 flex flex-col ">
-                        <p class="w-full flex px-3 text-center bg-yellow-200 my-1">${element["title"]}</p>
-                        <p class="w-full flex justify-around bg-blue-500 my-1">
-                        <span>Price : ${element["price"]}</span>
-                        <span>Brand : ${element["brand"]}</span>
-                        <span>Category : ${element["category"]}</span>
-                        </p>
-    
-                        </div>
-                        
-                        </div>`
-                    }
-                });
-
-                $("#searchSuggestion").fadeIn(200)
+                $("#searchSuggestion").fadeIn(100)
 
             } else {
-                $("#searchSuggestion").fadeOut(200)
+                $("#searchSuggestion").fadeOut(100)
             }
 
 
 
-            $("#searchSuggestionBox").html(html)
+
 
 
         }
     });
+
+    $("#searchbtn").click(function() {
+        html = ``
+
+        let inputVal = $("#SearchInput").val()
+        if (!inputVal == "") {
+
+            results(inputVal)
+
+            $("#searchSuggestion").fadeIn(100)
+
+        } else {
+            $("#searchSuggestion").fadeOut(100)
+        }
+    })
+
+    $("#searchSuggestion").mouseleave(function() {
+        $("#searchSuggestion").fadeOut()
+    })
+
 
 
 
