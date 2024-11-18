@@ -1,28 +1,9 @@
 $(document).ready(function() {
-    $("#HeaderUserBtn").on("click", function() {
-        if ($("#loginScreen").hasClass("hidden")) {
-            $("#loginScreen").removeClass("hidden");
-            $("#loginScreen").addClass("flex");
-        } else {
-            $("#loginScreen").addClass("hidden");
-            $("#loginScreen").removeClass("flex");
-        }
+    $("#HeaderUserBtn , #mobileUserBtn").click(function() {
+        $("#loginScreen").fadeToggle(70); // Toggle with fade effect over 500 milliseconds
+    });
+    $("#closelogin").click(function() {
+        $("#loginScreen").fadeToggle(70);
     })
-    $("#mobileUserBtn").on("click", function() {
-        if ($("#loginScreen").hasClass("hidden")) {
-            $("#loginScreen").removeClass("hidden");
-            $("#loginScreen").addClass("flex");
-        } else {
-            $("#loginScreen").addClass("hidden");
-            $("#loginScreen").removeClass("flex");
-        }
-    })
-    $("#closelogin").on("click", function() {
-        if ($("#loginScreen").hasClass("flex")) {
-            $("#loginScreen").addClass("hidden");
-            $("#loginScreen").removeClass("flex");
-        }
-    })
-
 
 })

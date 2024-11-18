@@ -34,7 +34,8 @@
             </button>
         </div>
         <div class="w-20 flex items-center border-2 border-black me-5  rounded-md">
-            <button class="w-6/12 h-full px-1 rounded-s-md"><i class="fa-solid fa-gear text-xl"></i></button>
+            <button class="w-6/12 h-full px-1 rounded-s-md"><i class="fa-solid fa-gear text-xl"
+                    id="HeaderSettingsBtn"></i></button>
             <button class="w-6/12 h-full px-1 rounded-e-md" id="HeaderUserBtn"><i
                     class="fa-regular fa-user text-xl"></i></button>
         </div>
@@ -77,65 +78,71 @@
         <!-- desktop Menu Bar End -->
 
         <!-- Login desktop Start -->
-        <div class="md:w-2/12 w-10/12 bg-white hidden flex-col mx-auto fixed top-1/4 z-50 items-center rounded-md py-4 border-2 border-black"
-            id="loginScreen">
-            <div class="w-11/12 flex flex-col">
-                <label for="UsernameInput" class="my-1 font-semibold">Enter Username</label>
-                <input type="text" name="UsernameInput" id="UsernameInput"
-                    class="h-10 rounded-md px-2 border-2 border-black focus:outline-none font-semibold text-lg">
-                <p id="usernameError"></p>
-            </div>
-            <div class="w-11/12 flex flex-col my-2">
-                <label for="UsernameInput" class="my-1 font-semibold">Enter Password</label>
-                <input type="text" name="UsernameInput" id="UsernameInput"
-                    class="h-10 rounded-md px-2 border-2 border-black focus:outline-none font-semibold text-lg">
-                <p id="usernameError"></p>
-            </div>
-            <button class="w-11/12 bg-green-500 py-2 rounded-md mt-3 font-semibold border-2 border-black">
-                Google
-            </button>
-            <button class="w-11/12 bg-blue-500 py-2 rounded-md my-2 font-semibold border-2 border-black">Login</button>
-            <button class="w-11/12 bg-red-500 py-2 rounded-md  font-semibold border-2 border-black"
-                id="closelogin">Close</button>
+        <div id="loginScreen"
+            class="md:w-2/12 w-10/12 bg-white hidden mx-auto fixed top-1/4 z-50 border-2 border-black rounded-md">
+            <div class="flex-col items-center py-4 flex">
+                <div class="w-11/12 flex flex-col">
+                    <label for="UsernameInput" class="my-1 font-semibold">Enter Username</label>
+                    <input type="text" name="UsernameInput" id="UsernameInput"
+                        class="h-10 rounded-md px-2 border-2 border-black focus:outline-none font-semibold text-lg">
+                    <p id="usernameError"></p>
+                </div>
+                <div class="w-11/12 flex flex-col my-2">
+                    <label for="UsernameInput" class="my-1 font-semibold">Enter Password</label>
+                    <input type="text" name="UsernameInput" id="UsernameInput"
+                        class="h-10 rounded-md px-2 border-2 border-black focus:outline-none font-semibold text-lg">
+                    <p id="usernameError"></p>
+                </div>
+                <button class="w-11/12 bg-green-500 py-2 rounded-md mt-3 font-semibold border-2 border-black">
+                    Google
+                </button>
+                <button
+                    class="w-11/12 bg-blue-500 py-2 rounded-md my-2 font-semibold border-2 border-black">Login</button>
+                <button class="w-11/12 bg-red-500 py-2 rounded-md  font-semibold border-2 border-black"
+                    id="closelogin">Close</button>
 
+            </div>
         </div>
+
         <!-- Login desktop End -->
-
         <div id="SettingsWindow"
-            class="lg:w-3/12 md:w-4/12 w-10/12 bg-white flex flex-col mx-auto fixed top-1/4 z-50 items-center rounded-md py-4 border-2 border-black">
-            <p class="text-xl font-semibold">Settings</p>
+            class="hidden lg:w-3/12 md:w-4/12 w-10/12 bg-white mx-auto fixed top-1/4 z-50 rounded-md border-2 border-black">
+            <div class="flex flex-col items-center py-4">
+                <p class="text-xl font-semibold">Settings</p>
 
-            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
-                <span class="text-lg font-medium">Dark Theme</span>
-                <input type="checkbox" value="" class="sr-only peer">
-                <div
-                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-            </label>
-            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
-                <span class="text-lg font-medium">Navigator</span>
-                <input type="checkbox" value="" class="sr-only peer">
-                <div
-                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-            </label>
-            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
-                <span class="text-lg font-medium">Notifications</span>
-                <input type="checkbox" value="" class="sr-only peer">
-                <div
-                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-            </label>
-            <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
-                <span class="text-lg font-medium">Personalized Advertising</span>
-                <input type="checkbox" value="" class="sr-only peer">
-                <div
-                    class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                </div>
-            </label>
-            <button id="close-settings-btn"
-                class="w-11/12 bg-red-500 py-2 rounded-md mt-2 font-semibold border-2 border-black">Close</button>
+                <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                    <span class="text-lg font-medium">Dark Theme</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                </label>
+                <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                    <span class="text-lg font-medium">Navigator</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                </label>
+                <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                    <span class="text-lg font-medium">Notifications</span>
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                </label>
+                <label class="flex items-center cursor-pointer justify-between px-4 w-full my-2">
+                    <span class="text-lg font-medium">Personalized Advertising</span>
+                    <input type="checkbox" checked value="" class="sr-only peer">
+                    <div
+                        class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                    </div>
+                </label>
+                <button id="close-settings-btn"
+                    class="w-11/12 bg-red-500 py-2 rounded-md mt-2 font-semibold border-2 border-black">Close</button>
+            </div>
         </div>
+
 
         <div id="content" class="md:w-9/12 w-full rounded-md flex flex-col z-0">
             <div class="swiper BannerSwiper w-full rounded-t-md !hidden md:!flex">
@@ -276,7 +283,7 @@
         <button id="mobileHomeMenuItem"><i class="fa-solid fa-house text-xl my-2"></i></button>
         <button id="mobileCategoryMenuItem"><i class="fa-solid fa-bars text-xl my-2"></i></button>
         <button><i class="fa-solid fa-magnifying-glass text-xl my-2"></i></button>
-        <button><i class="fa-solid fa-gear text-xl my-2"></i></button>
+        <button id="MobileSettingsBtn"><i class="fa-solid fa-gear text-xl my-2"></i></button>
         <button id="mobileUserBtn"><i class="fa-regular fa-user text-xl my-2"></i></button>
     </nav>
     <!-- Login Screen mobile start -->
@@ -299,6 +306,7 @@
     <script src="script/MobileCategory/showAll.js"></script>
     <script src="script/MobileCategory/categoryBtn.js"></script>
     <script src="script/MenuBar/Contact.js"></script>
+    <script src="script/Header/Settings.js"></script>
 </body>
 
 </html>
