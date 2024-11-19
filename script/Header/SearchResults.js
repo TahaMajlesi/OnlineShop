@@ -17,11 +17,11 @@ $(document).ready(function() {
             if (elemTitleToLower.includes(inputValue.toLowerCase()) || elemModelToLower.includes(inputValue.toLowerCase())) {
                 html += `<div class="w-full flex flex-col hover:border-black border-y-2 cursor-pointer ItemCard" id="${element["id"]}">
                 <p class="w-full flex px-3 my-1">${element["title"]}</p>
-                <p class="w-full flex justify-around my-1">
-                <span>Model : ${element["model"]}</span>
-                <span>Brand : ${element["brand"]}</span>
-                <span>Category : ${element["category"]}</span>
-                <span>Price : ${element["price"]}$</span>
+                <p class="w-full flex justify-around my-1 flex-col sm:flex-row px-3 sm:px-3">
+                <span class="w-full">Model : ${element["model"]}</span>
+                <span class="w-full">Brand : ${element["brand"]}</span>
+                <span class="w-full">Category : ${element["category"]}</span>
+                <span class="w-full">Price : ${element["price"]}$</span>
                 
                 
                 </p>
@@ -32,6 +32,7 @@ $(document).ready(function() {
             }
         });
         $("#MobileSearchSuggestionBox").html(html)
+        $("#searchSuggestionBox").html(html)
     }
 
     $('#SearchInput').keypress(function(e) {
@@ -42,6 +43,7 @@ $(document).ready(function() {
             let inputVal = $("#SearchInput").val()
             if (!inputVal == "") {
                 results(inputVal)
+
 
                 $("#searchSuggestion").fadeIn(100)
 
