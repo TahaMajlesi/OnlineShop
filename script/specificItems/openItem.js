@@ -9,6 +9,11 @@ $(document).ready(function() {
             $("#content").addClass("hidden")
             $("#specificItem").removeClass("hidden")
             $("#specificItem").addClass("flex")
+        } else if ($("#mobileCategory").hasClass("flex")) {
+            $("#mobileCategory").removeClass("flex")
+            $("#mobileCategory").addClass("hidden")
+            $("#specificItem").removeClass("hidden")
+            $("#specificItem").addClass("flex")
         }
 
 
