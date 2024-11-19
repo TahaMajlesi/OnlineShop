@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("#Discount-Time , #TvParty , #searchSuggestionBox").on("click", '.ItemCard', function() {
+    $("#Discount-Time , #TvParty , #searchSuggestionBox , #MobileSearchSuggestionBox").on("click", '.ItemCard', function() {
         window.parent.LoadItemData($(this).attr("id"))
 
 

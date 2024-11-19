@@ -31,7 +31,7 @@ $(document).ready(function() {
                 </div>`
             }
         });
-        $("#searchSuggestionBox").html(html)
+        $("#MobileSearchSuggestionBox").html(html)
     }
 
     $('#SearchInput').keypress(function(e) {
@@ -57,6 +57,33 @@ $(document).ready(function() {
         }
     });
 
+    $('#MobileSearchBar').keypress(function(e) {
+        html = ``
+        var key = e.which;
+        if (key == 13) // the enter key code
+        {
+            let inputVal = $("#MobileSearchBar").val()
+            if (!inputVal == "") {
+                results(inputVal)
+
+                $("#MobileSearchSuggestions").fadeIn(100)
+                $("#MobileSearchBar").addClass("rounded-b-none")
+                $("#MobileSearchBar").addClass("border-b-0")
+            } else {
+                $("#MobileSearchSuggestions").fadeOut(100)
+                $("#MobileSearchBar").removeClass("rounded-b-none")
+                $("#MobileSearchBar").removeClass("border-b-0")
+            }
+        }
+    });
+
+
+
+
+
+
+
+
     $("#searchbtn").click(function() {
         html = ``
 
@@ -75,6 +102,15 @@ $(document).ready(function() {
     $("#searchSuggestion").mouseleave(function() {
         $("#searchSuggestion").fadeOut()
     })
+
+
+    $('body').click(function(event) {
+        if (!$(event.target).is('#MobileSearchSuggestions')) {
+            $('#MobileSearchSuggestions').fadeOut(100);
+            $("#MobileSearchBar").removeClass("rounded-b-none")
+            $("#MobileSearchBar").removeClass("border-b-0")
+        }
+    });
 
 
 
