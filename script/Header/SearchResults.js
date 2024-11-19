@@ -40,6 +40,7 @@ $(document).ready(function() {
         var key = e.which;
         if (key == 13) // the enter key code
         {
+            e.preventDefault();
             let inputVal = $("#SearchInput").val()
             if (!inputVal == "") {
                 results(inputVal)
@@ -64,6 +65,7 @@ $(document).ready(function() {
         var key = e.which;
         if (key == 13) // the enter key code
         {
+            e.preventDefault();
             let inputVal = $("#MobileSearchBar").val()
             if (!inputVal == "") {
                 results(inputVal)
