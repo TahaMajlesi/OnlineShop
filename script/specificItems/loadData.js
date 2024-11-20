@@ -15,7 +15,7 @@ $(document).ready(function() {
 
         <div class="w-full flex py-2 border-b-2 border-black">
         <p class="w-full flex gap-x-10">
-        <span>
+        <span class="">
         ${Math.floor((Math.random() * 5) + 1)} / 5
         <i class="fa-regular fa-star hover:text-yellow-400 cursor-pointer"></i>
         <i class="fa-regular fa-star hover:text-yellow-400 cursor-pointer"></i>

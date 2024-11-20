@@ -21,6 +21,10 @@ $(document).ready(function() {
             $("#content").removeClass("hidden")
             $("#content").addClass("flex")
         }
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+
     })
     $("#mobileHomeMenuItem , #HomeMenuItem").on("click", function() {
         $("#mobileCategory").removeClass("flex")
