@@ -22,13 +22,13 @@ $(document).ready(function() {
                 <span class="w-full">Brand : ${element["brand"]}</span>
                 <span class="w-full">Category : ${element["category"]}</span>
                 <span class="w-full">Price : ${element["price"]}$</span>
-                
-                
                 </p>
 
                 </div>
                 
                 </div>`
+            } else if (inputValue.trim() === "") {
+                html = `<p>Item not found !</p>`
             }
         });
         $("#MobileSearchSuggestionBox").html(html)
