@@ -11,6 +11,7 @@ $(document).ready(function() {
                 }
             });
             BrandList.sort();
+
         });
 
     $("#BrandsMenuItem").hover(function() {
